@@ -1,0 +1,157 @@
+/opt/slurm/data/slurmd/job169953/slurm_script: line 17: cd: /path/to/part-1: No such file or directory
+Requirement already satisfied: transformers==4.26.1 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from -r requirements.txt (line 1)) (4.26.1)
+Requirement already satisfied: datasets==2.9.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from -r requirements.txt (line 2)) (2.9.0)
+Requirement already satisfied: torch==1.13.1 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from -r requirements.txt (line 3)) (1.13.1)
+Requirement already satisfied: evaluate==0.4.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from -r requirements.txt (line 4)) (0.4.0)
+Requirement already satisfied: scikit-learn==1.2.1 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from -r requirements.txt (line 5)) (1.2.1)
+Requirement already satisfied: nltk==3.8.1 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from -r requirements.txt (line 6)) (3.8.1)
+Requirement already satisfied: filelock in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from transformers==4.26.1->-r requirements.txt (line 1)) (3.29.0)
+Requirement already satisfied: huggingface-hub<1.0,>=0.11.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from transformers==4.26.1->-r requirements.txt (line 1)) (0.36.2)
+Requirement already satisfied: numpy>=1.17 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from transformers==4.26.1->-r requirements.txt (line 1)) (1.26.4)
+Requirement already satisfied: packaging>=20.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from transformers==4.26.1->-r requirements.txt (line 1)) (26.0)
+Requirement already satisfied: pyyaml>=5.1 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from transformers==4.26.1->-r requirements.txt (line 1)) (6.0.3)
+Requirement already satisfied: regex!=2019.12.17 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from transformers==4.26.1->-r requirements.txt (line 1)) (2026.4.4)
+Requirement already satisfied: requests in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from transformers==4.26.1->-r requirements.txt (line 1)) (2.33.1)
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from transformers==4.26.1->-r requirements.txt (line 1)) (0.13.3)
+Requirement already satisfied: tqdm>=4.27 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from transformers==4.26.1->-r requirements.txt (line 1)) (4.67.3)
+Requirement already satisfied: pyarrow>=6.0.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from datasets==2.9.0->-r requirements.txt (line 2)) (11.0.0)
+Requirement already satisfied: dill<0.3.7 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from datasets==2.9.0->-r requirements.txt (line 2)) (0.3.6)
+Requirement already satisfied: pandas in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from datasets==2.9.0->-r requirements.txt (line 2)) (3.0.2)
+Requirement already satisfied: xxhash in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from datasets==2.9.0->-r requirements.txt (line 2)) (3.6.0)
+Requirement already satisfied: multiprocess in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from datasets==2.9.0->-r requirements.txt (line 2)) (0.70.14)
+Requirement already satisfied: fsspec>=2021.11.1 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from fsspec[http]>=2021.11.1->datasets==2.9.0->-r requirements.txt (line 2)) (2026.3.0)
+Requirement already satisfied: aiohttp in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from datasets==2.9.0->-r requirements.txt (line 2)) (3.13.5)
+Requirement already satisfied: responses<0.19 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from datasets==2.9.0->-r requirements.txt (line 2)) (0.18.0)
+Requirement already satisfied: typing-extensions in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from torch==1.13.1->-r requirements.txt (line 3)) (4.15.0)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.7.99 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from torch==1.13.1->-r requirements.txt (line 3)) (11.7.99)
+Requirement already satisfied: nvidia-cudnn-cu11==8.5.0.96 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from torch==1.13.1->-r requirements.txt (line 3)) (8.5.0.96)
+Requirement already satisfied: nvidia-cublas-cu11==11.10.3.66 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from torch==1.13.1->-r requirements.txt (line 3)) (11.10.3.66)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.7.99 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from torch==1.13.1->-r requirements.txt (line 3)) (11.7.99)
+Requirement already satisfied: scipy>=1.3.2 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from scikit-learn==1.2.1->-r requirements.txt (line 5)) (1.17.1)
+Requirement already satisfied: joblib>=1.1.1 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from scikit-learn==1.2.1->-r requirements.txt (line 5)) (1.5.3)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from scikit-learn==1.2.1->-r requirements.txt (line 5)) (3.6.0)
+Requirement already satisfied: click in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from nltk==3.8.1->-r requirements.txt (line 6)) (8.3.2)
+Requirement already satisfied: setuptools in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch==1.13.1->-r requirements.txt (line 3)) (82.0.1)
+Requirement already satisfied: wheel in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch==1.13.1->-r requirements.txt (line 3)) (0.46.3)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.11.0->transformers==4.26.1->-r requirements.txt (line 1)) (1.4.3)
+Requirement already satisfied: urllib3>=1.25.10 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from responses<0.19->datasets==2.9.0->-r requirements.txt (line 2)) (2.6.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from requests->transformers==4.26.1->-r requirements.txt (line 1)) (3.4.7)
+Requirement already satisfied: idna<4,>=2.5 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from requests->transformers==4.26.1->-r requirements.txt (line 1)) (3.11)
+Requirement already satisfied: certifi>=2023.5.7 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from requests->transformers==4.26.1->-r requirements.txt (line 1)) (2026.2.25)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from aiohttp->datasets==2.9.0->-r requirements.txt (line 2)) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from aiohttp->datasets==2.9.0->-r requirements.txt (line 2)) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from aiohttp->datasets==2.9.0->-r requirements.txt (line 2)) (26.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from aiohttp->datasets==2.9.0->-r requirements.txt (line 2)) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from aiohttp->datasets==2.9.0->-r requirements.txt (line 2)) (6.7.1)
+Requirement already satisfied: propcache>=0.2.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from aiohttp->datasets==2.9.0->-r requirements.txt (line 2)) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from aiohttp->datasets==2.9.0->-r requirements.txt (line 2)) (1.23.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from pandas->datasets==2.9.0->-r requirements.txt (line 2)) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in /home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages (from python-dateutil>=2.8.2->pandas->datasets==2.9.0->-r requirements.txt (line 2)) (1.17.0)
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+Moving 0 files to the new cache system
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/er3410/hw4/release/part-1/main.py", line 191, in <module>
+    dataset = load_dataset("imdb")
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1735, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1493, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1217, in dataset_module_factory
+    raise e1 from None
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1203, in dataset_module_factory
+    ).get_module()
+      ^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 767, in get_module
+    else get_data_patterns_in_dataset_repository(hfh_dataset_info, self.data_dir)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/data_files.py", line 675, in get_data_patterns_in_dataset_repository
+    return _get_data_files_patterns(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/data_files.py", line 236, in _get_data_files_patterns
+    data_files = pattern_resolver(pattern)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/data_files.py", line 486, in _resolve_single_pattern_in_dataset_repository
+    glob_iter = [PurePath(filepath) for filepath in fs.glob(PurePath(pattern).as_posix()) if fs.isfile(filepath)]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/fsspec/spec.py", line 647, in glob
+    pattern = glob_translate(path + ("/" if ends_with_sep else ""))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/fsspec/utils.py", line 740, in glob_translate
+    raise ValueError(
+ValueError: Invalid pattern: '**' can only be an entire path component
+/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/er3410/hw4/release/part-1/main.py", line 191, in <module>
+    dataset = load_dataset("imdb")
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1735, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1493, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1217, in dataset_module_factory
+    raise e1 from None
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1203, in dataset_module_factory
+    ).get_module()
+      ^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 767, in get_module
+    else get_data_patterns_in_dataset_repository(hfh_dataset_info, self.data_dir)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/data_files.py", line 675, in get_data_patterns_in_dataset_repository
+    return _get_data_files_patterns(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/data_files.py", line 236, in _get_data_files_patterns
+    data_files = pattern_resolver(pattern)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/data_files.py", line 486, in _resolve_single_pattern_in_dataset_repository
+    glob_iter = [PurePath(filepath) for filepath in fs.glob(PurePath(pattern).as_posix()) if fs.isfile(filepath)]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/fsspec/spec.py", line 647, in glob
+    pattern = glob_translate(path + ("/" if ends_with_sep else ""))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/fsspec/utils.py", line 740, in glob_translate
+    raise ValueError(
+ValueError: Invalid pattern: '**' can only be an entire path component
+/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/er3410/hw4/release/part-1/main.py", line 191, in <module>
+    dataset = load_dataset("imdb")
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1735, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1493, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1217, in dataset_module_factory
+    raise e1 from None
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 1203, in dataset_module_factory
+    ).get_module()
+      ^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/load.py", line 767, in get_module
+    else get_data_patterns_in_dataset_repository(hfh_dataset_info, self.data_dir)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/data_files.py", line 675, in get_data_patterns_in_dataset_repository
+    return _get_data_files_patterns(resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/data_files.py", line 236, in _get_data_files_patterns
+    data_files = pattern_resolver(pattern)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/datasets/data_files.py", line 486, in _resolve_single_pattern_in_dataset_repository
+    glob_iter = [PurePath(filepath) for filepath in fs.glob(PurePath(pattern).as_posix()) if fs.isfile(filepath)]
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/fsspec/spec.py", line 647, in glob
+    pattern = glob_translate(path + ("/" if ends_with_sep else ""))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/fsspec/utils.py", line 740, in glob_translate
+    raise ValueError(
+ValueError: Invalid pattern: '**' can only be an entire path component

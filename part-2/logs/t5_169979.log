@@ -1,0 +1,19 @@
+Downloading config.json: 0.00B [00:00, ?B/s]Downloading config.json: 1.21kB [00:00, 4.19MB/s]
+Downloading pytorch_model.bin:   0%|     | 0.00/242M [00:00<?, ?B/s]Downloading pytorch_model.bin:   4%| | 10.5M/242M [00:00<00:02, 91.4Downloading pytorch_model.bin:  13%|▏| 31.5M/242M [00:00<00:01, 156MDownloading pytorch_model.bin:  26%|▎| 62.9M/242M [00:00<00:00, 206MDownloading pytorch_model.bin:  39%|▍| 94.4M/242M [00:00<00:00, 223MDownloading pytorch_model.bin:  52%|▌| 126M/242M [00:00<00:00, 217MBDownloading pytorch_model.bin:  69%|▋| 168M/242M [00:00<00:00, 245MBDownloading pytorch_model.bin:  82%|▊| 199M/242M [00:00<00:00, 234MBDownloading pytorch_model.bin:  95%|▉| 231M/242M [00:01<00:00, 254MBDownloading pytorch_model.bin: 100%|█| 242M/242M [00:01<00:00, 227MB
+Downloading generation_config.json:   0%| | 0.00/147 [00:00<?, ?B/s]Downloading generation_config.json: 100%|█| 147/147 [00:00<00:00, 91
+Traceback (most recent call last):
+  File "/home/er3410/hw4/release/part-2/train_t5.py", line 277, in <module>
+    main()
+  File "/home/er3410/hw4/release/part-2/train_t5.py", line 249, in main
+    optimizer, scheduler = initialize_optimizer_and_scheduler(args, model, len(train_loader))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/hw4/release/part-2/t5_utils.py", line 49, in initialize_optimizer_and_scheduler
+    optimizer = initialize_optimizer(args, model)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/hw4/release/part-2/t5_utils.py", line 54, in initialize_optimizer
+    decay_parameters = get_parameter_names(model, ALL_LAYERNORM_LAYERS)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/hw4/release/part-2/t5_utils.py", line 95, in get_parameter_names
+    for name, child in model.named_children():
+                       ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'named_children'

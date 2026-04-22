@@ -1,0 +1,49 @@
+================================================================================
+TABLE 1: DATA STATISTICS BEFORE PREPROCESSING (RAW TEXT)
+================================================================================
+Statistics Name                                    Train             Dev
+----------------------------------------------------------------------
+Number of examples                                  4225             466
+Mean sentence length (chars)                       62.25           61.83
+Mean SQL query length (chars)                     600.68          582.66
+Vocabulary size (natural language)                   868             444
+Vocabulary size (SQL)                                643             393
+
+================================================================================
+TABLE 2: DATA STATISTICS AFTER PREPROCESSING (TOKENIZED)
+================================================================================
+Model: google-t5/t5-small
+
+Statistics Name                                    Train             Dev
+----------------------------------------------------------------------
+Mean NL tokens per example                         17.10           17.07
+Mean SQL tokens per example                       216.37          210.05
+NL vocabulary size (unique tokens)                   791             465
+SQL vocabulary size (unique tokens)                  555             395
+Tokenizer vocabulary size                          32100           32100
+
+================================================================================
+ADDITIONAL STATISTICS
+================================================================================
+
+Natural Language (Train):
+  - Min token length: 2
+  - Max token length: 59
+  - Mean token length: 17.10
+
+SQL Query (Train):
+  - Min token length: 25
+  - Max token length: 510
+  - Mean token length: 216.37
+
+Natural Language (Dev):
+  - Min token length: 3
+  - Max token length: 43
+  - Mean token length: 17.07
+
+SQL Query (Dev):
+  - Min token length: 30
+  - Max token length: 502
+  - Mean token length: 210.05
+
+================================================================================

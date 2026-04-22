@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/er3410/hw4/release/part-2/train_t5.py", line 8, in <module>
+    import wandb
+ModuleNotFoundError: No module named 'wandb'
+/opt/slurm/data/slurmd/job169977/slurm_script: line 34: --patience_epochs: command not found
+/opt/slurm/data/slurmd/job169977/slurm_script: line 37: --num_warmup_epochs: command not found

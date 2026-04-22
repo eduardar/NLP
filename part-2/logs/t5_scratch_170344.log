@@ -1,0 +1,25 @@
+wandb: WARNING The anonymous setting has no effect and will be removed in a future version.
+Traceback (most recent call last):
+  File "/home/er3410/hw4/release/part-2/train_t5_scratch.py", line 268, in <module>
+    main()
+  File "/home/er3410/hw4/release/part-2/train_t5_scratch.py", line 234, in main
+    setup_wandb(args)
+  File "/home/er3410/hw4/release/part-2/t5_utils.py", line 14, in setup_wandb
+    wandb.init(
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1611, in init
+    get_sentry().reraise(e)
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/wandb/analytics/sentry.py", line 190, in reraise
+    raise exc.with_traceback(tb)
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1532, in init
+    wi.maybe_login(init_settings)
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 197, in maybe_login
+    wandb_login._login(
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/wandb/sdk/wandb_login.py", line 190, in _login
+    auth = _find_or_prompt_for_key(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/wandb/sdk/wandb_login.py", line 266, in _find_or_prompt_for_key
+    auth = wbauth.authenticate_session(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/er3410/.conda/envs/nlp_hw4/lib/python3.11/site-packages/wandb/sdk/lib/wbauth/authenticate.py", line 139, in authenticate_session
+    raise UsageError(
+wandb.errors.errors.UsageError: No API key configured. Use `wandb login` to log in.
